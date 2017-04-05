@@ -3,5 +3,14 @@ package com.acme;
 import scala.Enumeration;
 
 public interface Bar {
-    void init(Enumeration.Value mode);
+
+    /**
+     * Using standard lib
+     */
+    void a(Enumeration.Value mode);
+
+    /**
+     * User defined classes
+     */
+    void b(Outer.Inner inner);
 }
